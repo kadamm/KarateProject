@@ -9,7 +9,7 @@ public class TestRunner {
 
     @Test
     void runScenario() {
-        Results results = Runner.path("classpath:features/")
+        Results results = Runner.path("classpath:KarateFeatureFiles/")
                 .tags("@smoke")
                 .outputJunitXml(true).parallel(1);
     }
