@@ -2,6 +2,12 @@ function fn() {
     var config = {
         baseUrl: 'https://reqres.in'
     };
-    // any global variables and functions
+
+    // Call Java class
+    var My = Java.type('Utils.MyUtils');
+
+    config.square = function(x) {
+        return My.square(x);
+    }
     return config;
 }

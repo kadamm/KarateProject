@@ -10,7 +10,7 @@ public class TestRunner {
     @Test
     void runScenario() {
         Results results = Runner.path("classpath:KarateFeatureFiles/")
-                .tags("@smoke")
+                .tags("@smoke_1")
                 .outputJunitXml(true).parallel(1);
     }
 }
